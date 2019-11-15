@@ -22,7 +22,7 @@ Arguments:
 - `-p`: Pretty-print resulting matrix using pretty-table
 
 ## Examples
-- Scale matrix of size 3 to matrix of size 4, using Nearest-Neighbor Interpolation:
+- Scale matrix of size 3 to matrix of size 4, using Nearest-Neighbor Interpolation:<br>
   `python cm_scaling.py scale "1;2;3\n4;5;6\n7;8;9" 4 -i nn`
   ```
   1;2;2;3
@@ -30,7 +30,7 @@ Arguments:
   4;5;5;6
   7;8;8;9
   ```
-- Scale matrix of size 3 to size 4, Bilinear Interpolation, pretty-print:
+- Scale matrix of size 3 to size 4, Bilinear Interpolation, pretty-print:<br>
   `python cm_scaling.py scale "1;2;3\n4;5;6\n7;8;9" 4 -i bilin -p`
   ```
   +---+---+---+---+
