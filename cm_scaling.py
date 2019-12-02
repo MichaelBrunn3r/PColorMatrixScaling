@@ -94,7 +94,7 @@ def scale_matrix_to_size(matrix, size, interpolation):
 
 def cmd_scale(argv):
 	parser = argparse.ArgumentParser(description='Scale input Color Matrix', usage='%(prog)s {} [-h] [string] size [-i {{nn,bilin}}] [-p]'.format(CMD_SCALE))
-	parser.add_argument('string', nargs='?', type=str, default=None, help="The color matrix. Values seperated by ';', rows by '\n'")
+	parser.add_argument('string', nargs='?', type=str, default=None, help="The color matrix in CSV Format")
 	parser.add_argument('size', type=int, help="The size to scale the matrix to")
 	parser.add_argument('-i', '--interpolation', choices=INTERPOLATIONS, help="The type of interpolation to use")
 	parser.add_argument('-p', '--pretty-print', action='store_true', help='Pretty-print resulting matrix')
